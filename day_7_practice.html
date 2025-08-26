@@ -1,0 +1,68 @@
+<!-- 
+Task:
+Create a Django-like template (HTML only):
+
+A navbar with links
+
+A welcome message using {{ username }}
+
+A loop {% for item in items %} displaying list items
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Template Example</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about/">About</a> |
+        <a href="/contact/">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Welcome Message -->
+    <h1>Welcome, {{ username }}!</h1>
+
+    <!-- Loop Example -->
+    <h2>Your Items:</h2>
+    <ul>
+        {% for item in items %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <pre>
+        🔹 What this will do in Django:
+
+        If in your views.py you pass:
+
+        return render(request, "index.html", {
+                "username": "Atta",
+                "items": ["Laptop", "Phone", "Book"]
+            })
+    </pre>
+
+    <pre>
+        The output will be:
+
+            Navbar links...
+            Welcome, Atta!
+
+            Your Items:
+            - Laptop
+            - Phone
+            - Book
+    </pre>
+
+</body>
+
+</html>

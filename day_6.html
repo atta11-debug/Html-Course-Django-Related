@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Learning</title>
+    <!-- <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Ordered List Style */
+ol {
+    margin-left: 20px;
+}
+
+ol > li {
+    margin-bottom: 30px;
+}
+
+/* Section Headings */
+h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+    border-left: 4px solid #3498db;
+    padding-left: 8px;
+}
+
+h4 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+/* Header */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    background: #2ecc71;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Section */
+section {
+    background: #fefefe;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Article */
+article {
+    background: #f4f9ff;
+    border-left: 5px solid #2980b9;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Div Example */
+div {
+    border: 1px dashed #7f8c8d;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f0f0f0;
+}
+
+/* Span Example */
+span {
+    font-weight: bold;
+}
+
+/* Figure */
+figure {
+    text-align: center;
+    margin: 15px 0;
+}
+figure img {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+    </style> -->
+</head>
+
+<body>
+    <h1>Semantic HTML & Layout</h1>
+    <ol>
+        <li>
+            <h3>Semantic HTML Elements</h3>
+
+            <ul>
+                <li>
+                    <h4>"header"</h4>
+                    <p>Represents the top section of a page or article. <br>
+                        Usually contains logo, navigation, title, search bar. <br>
+                        For Example : </p>
+
+                    <header>My Website</header>
+                    <p>Learning html step by step.</p>
+
+                </li>
+                <li>
+                    <h4>"nav"</h4>
+                    <p>Defines a navigation menu (links to other pages or sections).</p>
+                    <nav>
+                        <a href="https://youtube.com">Youtube</a>|
+                        <a href="https://google.com">Google</a>|
+                        <a href="https://github.com">GitHub</a>
+                    </nav>
+                <li>
+                    <h4>"main"</h4>
+                    <p>The main content area of the page. <br>
+                        Only one main per page (unique).</p>
+                    <main>
+                        <h2>Welcome to My Site</h2>
+                        <p>This is where the main content goes.</p>
+                    </main>
+                </li>
+                <li>
+                    <h4>"section"</h4>
+                    <p>Groups related content together into sections. <br>
+                        Example: About section, Services section, Contact section.</p>
+
+                    <section id="about">
+                        <h2>About Me</h2>
+                        <p>I am learning Django and Web Development.</p>
+                    </section>
+                    <section id="school">
+                        <h2>School</h2>
+                        <p>Govt. Boys Higher Secondary School Bagh.</p>
+                    </section>
+                </li>
+                <li>
+                    <h4>"article"</h4>
+                    <p>Represents independent content (like blog post, news article, forum post). <br>
+                        Can stand alone if taken out of context.</p>
+                    <article>
+                        <h2>Latest News</h2>
+                        <p>Django 5.0 has been released with new features!</p>
+                    </article>
+                </li>
+                <li>
+                    <h4>"footer"</h4>
+                    <p>Bottom section of page/article. <br>
+                        Contains contact info, copyright, links, social media.</p>
+                    <footer>
+                        <p>© 2025 Atta’s Learning Journey</p>
+                    </footer>
+                </li>
+        </li>
+
+        </ul>
+        </li>
+
+        <li>
+            <h3>
+                "div" vs "span"
+            </h3>
+            <p>Both are non-semantic (don’t add meaning, just structure/styling). <br>
+                'div' = block-level container (big boxes, layouts). <br>Like :
+            <div style="background: lightgray ; padding: 10px;">
+                This is a div (block box).
+            </div> <br>
+            'span' = inline container (small text parts inside a line). <br>Like : </p>
+            <p>This is a <span style="color:red;">highlighted word</span> inside a sentence.</p>
+        </li>
+
+        <li>
+            <h3>'figure' and 'figcaption'</h3>
+            <p>Used for images, diagrams, charts, or code snippets with a caption. <br> like : </p>
+
+            <figure>
+                <img src="my.jpg" alt="My pic" width="150" height="200">
+                <figcaption>Figure 1: Atta Ul Mustafa</figcaption>
+            </figure>
+
+            <p>'figure' → groups media & caption. <br>
+                'figcaption' → provides description.</p>
+        </li>
+    </ol>
+</body>
+
+</html>

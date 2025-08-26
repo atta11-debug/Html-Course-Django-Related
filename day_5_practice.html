@@ -1,0 +1,45 @@
+<!-- 
+Task:
+Make a Registration Form (username, email, password, gender (radio), hobbies (checkbox), country (select)).
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <label for="Username">Username : </label>
+    <input type="text" name="Username" id="Username" placeholder="Enter username"><br><br>
+    <label for="email">Email : </label>
+    <input type="email" name="email" id="email" placeholder="Enter Email"><br><br>
+    <label for="Password">Password : </label>
+    <input type="Password" name="Password" id="Password" placeholder="Enter Password">
+    <br>
+    <p>Select your gender : </p>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+    <p>Your Hobbies : </p>
+    <input type="checkbox" name="hobby" id="Sports" value="Sports">
+    <label for="sports">Sports</label>
+    <input type="checkbox" name="hobby" id="Music" value="Music">
+    <label for="Music">Music</label>
+    <input type="checkbox" name="hobby" id="Running" value="Running">
+    <label for="Running">Running</label>
+    <input type="checkbox" name="hobby" id="Reading" value="Reading">
+    <label for="Reading">Reading</label>
+    <p>Select your country : </p>
+    <select name="country" id="country">
+        <option value="pk">Pakistan</option>
+        <option value="us">America</option>
+        <option value="uk">England</option>
+        <option value="ch">China</option>
+    </select>
+</body>
+</html>
